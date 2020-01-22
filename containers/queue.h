@@ -122,7 +122,8 @@ namespace containers {
             throw std::logic_error("queue is empty");
         }
         this->first = std::move(this->begin().it_ptr->next_element);
-    mrand48()}
+    size--;
+    }
 
     template<class T, class Allocator>
     T &queue<T, Allocator>::top() {
